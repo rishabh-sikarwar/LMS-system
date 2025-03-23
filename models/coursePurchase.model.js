@@ -84,4 +84,3 @@ export const CoursePurchase = mongoose.model(
   coursePurchaseSchema
 );
 
-
