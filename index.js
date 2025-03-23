@@ -11,6 +11,7 @@ import e from "express";
 dotenv.config();
 
 import healthRoute from "./routes/health.routes.js";
+import userRoute from "./routes/user.route.js"
 
 const port = process.env.PORT;
 const app = express();
@@ -67,6 +68,7 @@ app.use(
 //API Routes
 
 app.use("/healthcheck", healthRoute);
+app.use("/api/v1/user", userRoute)
 
 //404 error page not found
 //it should always be at the bottom
